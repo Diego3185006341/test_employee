@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 public class Employee {
 
     private Long id;
-    private String employee_name;
+    private String name;
     private double employee_salary;
-    private Integer employee_age;
+    private Integer age;
     private String profile_image;
     private double annual_salary;
 

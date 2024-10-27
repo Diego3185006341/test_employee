@@ -29,7 +29,7 @@ public class EmployeeServiceImpTest {
 
         assertEquals(3, result.size());
         assertEquals(101L, result.get(0).getId());
-        assertEquals("Alice Brown", result.get(0).getEmployee_name());
+        assertEquals("Alice Brown", result.get(0).getName());
         assertEquals(8000 * 12, result.get(0).getAnnual_salary());
 
     }
@@ -40,7 +40,7 @@ public class EmployeeServiceImpTest {
         Employee employeeById = employeeService.getEmployeeById(id);
 
         assertNotNull(employeeById);
-        assertEquals("Alice Brown", employeeById.getEmployee_name());
+        assertEquals("Alice Brown", employeeById.getName());
 
     }
 
