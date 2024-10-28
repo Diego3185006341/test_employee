@@ -38,9 +38,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private static List<Employee> getEmployees() {
         return Arrays.asList(
-                new Employee(101L, "Alice Brown", 8000, 28, "", 0),
-                new Employee(102L, "Bob White", 9000, 32, "", 0),
-                new Employee(103L, "Charlie Black", 10000, 40, "", 0)
+                new Employee(101L, "Alice Brown", 28, 8000, "", 0),
+                new Employee(102L, "Bob White", 32, 9000, "", 0),
+                new Employee(103L, "Charlie Black", 40, 10000, "", 0)
         );
     }
 }
