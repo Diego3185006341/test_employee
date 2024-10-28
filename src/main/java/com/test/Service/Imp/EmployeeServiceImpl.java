@@ -16,7 +16,6 @@ import java.util.List;
 @Slf4j
 public class EmployeeServiceImpl implements EmployeeService {
 
-
     public List<Employee> getAllEmployees() {
         List<Employee> employees = getEmployees();
         employees.forEach(emp -> emp.setAnnual_salary(EmployeeBusinessService.computeAnnualSalary(emp.getEmployee_salary())));
@@ -31,8 +30,6 @@ public class EmployeeServiceImpl implements EmployeeService {
                     .orElseThrow(() -> new RuntimeException("Employee with ID " + id + " not found"));
             employee1.setAnnual_salary(EmployeeBusinessService.computeAnnualSalary(employee1.getEmployee_salary()));
             return employee1;
-
-
 
     }
 
