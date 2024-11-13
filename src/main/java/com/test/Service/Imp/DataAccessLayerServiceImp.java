@@ -17,7 +17,6 @@ public class DataAccessLayerServiceImp implements DataAccessLayerService {
     public List<Employee> getAllEmployee() {
         return employeeServiceClient.getAllEmployees();
     }
-
     @Override
     public Employee getEmployeeById(Long id) {
         return employeeServiceClient.getEmployeeById(id);
